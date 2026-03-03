@@ -1,0 +1,25 @@
+{
+  "name": "deltaone-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@8.15.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "scripts": {
+    "dev:all": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "backend:dev": "cd backend && uv run python manage.py runserver",
+    "frontend:dev": "cd frontend && pnpm dev",
+    "docker:dev": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "turbo": "^2.8.10"
+  }
+}

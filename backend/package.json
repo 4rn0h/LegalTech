@@ -1,0 +1,12 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "uv run python manage.py runserver",
+    "migrate": "uv run python manage.py migrate",
+    "makemigrations": "uv run python manage.py makemigrations",
+    "shell": "uv run python manage.py shell",
+    "test": "uv run pytest"
+  }
+}
